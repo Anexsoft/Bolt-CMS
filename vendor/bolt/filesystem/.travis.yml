@@ -1,0 +1,34 @@
+language: php
+
+sudo: false
+
+php:
+  - 5.5
+  - 5.6
+  - 7.0
+  - hhvm
+
+matrix:
+  fast_finish: true
+  allow_failures:
+    - php: hhvm
+
+before_install:
+  
+before_script:
+  # Set up Composer
+  - composer self-update || true
+  - composer install --prefer-dist
+
+script:
+  # PHPUnit
+  - phpunit
+
+after_script:
+
+# Cache vendor dirs
+cache:
+  directories:
+    - vendor
+    - $COMPOSER_CACHE_DIR
+
