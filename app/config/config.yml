@@ -12,8 +12,8 @@ database:
     password: bolt
 
 # The name of the website
-sitename: A sample site
-payoff: The amazing payoff goes here
+sitename: Anexsoft News
+payoff: Tu portal que te mantendra al tanto sobre la tecnología
 
 # The theme to use. Be sure to copy the {theme_path}/base-2016 folder, and
 # change the name here accordingly.

@@ -17,10 +17,10 @@ groups:
     has_sortorder: true
 
 categories:
-    name: Categories
+    name: Categorías
     slug: categories
-    singular_name: Category
-    singular_slug: category
+    singular_name: Categoría
+    singular_slug: categories
     behaves_like: categories
     multiple: true
-    options: [ news, events, movies, music, books, life, love, fun ]
+    options: [ Front-End, Back-End, Otros ]

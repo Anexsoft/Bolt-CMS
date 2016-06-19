@@ -59,12 +59,3 @@ templatefields:
             label: A geolocation field
         image:
             type: image
-
-# Templates can be named for display in the template selector, to allow editors
-# to pick from easier to understand names.
-templateselect:
-    templates:
-         - name: 'Template with extra fields'
-           filename: 'extrafields.twig'
-         - name: 'Another template with extra fields'
-           filename: 'anotherextrafields.twig'
