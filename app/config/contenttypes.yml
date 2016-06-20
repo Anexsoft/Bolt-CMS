@@ -12,7 +12,7 @@
 # together.
 
 paginas:
-    name: paginas
+    name: Páginas
     singular_name: Página
     fields:
         title:
@@ -71,8 +71,8 @@ entradas:
         video:
             type: video
     taxonomy: [ categories, tags ]
-    record_template: entry.twig
-    listing_template: listing.twig
+    record_template: entradas/record.twig
+    listing_template: entradas/listing.twig
     listing_records: 10
     default_status: publish
     sort: -datepublish
