@@ -1,29 +1,32 @@
 {% extends 'partials/_master.twig' %}
+{% block header %}
+    {% include 'partials/_header.twig' %}
+{% endblock %}
 
 {% block main %}
-
-{{ dump(records) }}
 
 <div class="container">
     <div class="row">
         <div class="col-xs-12">
             
-            <h2 class="text-center page-header">
-                Mis publicaciones
-            </h2>
-            
-            <div class="post-preview">
-                <a href="post.html">
-                    <h2 class="post-title">
-                        Man must explore, and this is exploration at its greatest
-                    </h2>
-                    <h3 class="post-subtitle">
-                        Problems look mighty small from 150 miles up
-                    </h3>
-                </a>
-                <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2014</p>
-            </div>
-            <hr>
+            {% for record in records %}
+                <div class="post-preview">
+                    <a href="{{ record.contenttype.singular_slug }}/{{ record.slug }}">
+                        <h2 class="post-title">
+                            {{ record.titulo }}
+                        </h2>
+<!--
+                        <h3 class="post-subtitle">
+                            Problems look mighty small from 150 miles up
+                        </h3>
+-->
+                    </a>
+                    <p class="post-meta">Publicado por {{ record.user.username }} el <i class="fa fa-calendar"></i> {{ record.datepublish }}</p>
+                </div>
+                <hr>
+            {% else %}
+                No se han econtrado publicaciones
+            {% endfor %}
             
             <!-- Pager -->
             <ul class="pager">

@@ -37,8 +37,9 @@
 <body>
 
     {{ include('partials/_menu.twig') }}
-
-    {{ include('partials/_header.twig') }}
+    {% block header %}
+    {% endblock %}
+    
 
     <!-- Main Content -->    
     {% block main %}

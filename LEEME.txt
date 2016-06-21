@@ -1,0 +1,10 @@
+1- Adjunto el script de la base de datos
+2- Si accedes a mysql sin contraseña deberás crear
+   un usuario que tenga contraseña.
+3- En app/config/config.yml ahi podrás cambiar el usuario y
+   contraseña para mysql
+4- El usuario y password por defecto para acceder al    administrador es:
+   - admin
+   - 123456
+5- Para acceder al administrador la URL es la siguiente:
+   tu_proyecto_url/public/bolt

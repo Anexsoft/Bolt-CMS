@@ -60,8 +60,7 @@ entradas:
             type: slug
             uses: titulo
         descripcion:
-            type: html
-            height: 150px
+            type: textarea
         contenido:
             type: html
             height: 300px
@@ -70,10 +69,14 @@ entradas:
             group: media
         video:
             type: video
+    icon_many: "fa:book"
+    icon_one: "fa:book"
     taxonomy: [ categories, tags ]
+    
     record_template: entradas/record.twig
     listing_template: entradas/listing.twig
     listing_records: 10
+    
     default_status: publish
     sort: -datepublish
     recordsperpage: 10
