@@ -15,8 +15,8 @@ class __TwigTemplate_d5be4c0e5ad0d6c781319dcb4709a4dd7049008791bf5c79d0a982424b6
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_efc5d7c2c755656cabe6a08f38874dd857296145871a8bf10f7002a0f5c3ddab = $this->env->getExtension("native_profiler");
-        $__internal_efc5d7c2c755656cabe6a08f38874dd857296145871a8bf10f7002a0f5c3ddab->enter($__internal_efc5d7c2c755656cabe6a08f38874dd857296145871a8bf10f7002a0f5c3ddab_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@bolt/_nav/_footer.twig"));
+        $__internal_0cf985a79b4d5e169f15bd678a8cf1489e2e5bbb7fd89789669f645f90e52ffe = $this->env->getExtension("native_profiler");
+        $__internal_0cf985a79b4d5e169f15bd678a8cf1489e2e5bbb7fd89789669f645f90e52ffe->enter($__internal_0cf985a79b4d5e169f15bd678a8cf1489e2e5bbb7fd89789669f645f90e52ffe_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@bolt/_nav/_footer.twig"));
 
         // line 1
         if ( !twig_test_empty($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : null), "config", array()), "get", array(0 => "general/branding/provided_link"), "method"))) {
@@ -74,7 +74,7 @@ class __TwigTemplate_d5be4c0e5ad0d6c781319dcb4709a4dd7049008791bf5c79d0a982424b6
 ";
         }
         
-        $__internal_efc5d7c2c755656cabe6a08f38874dd857296145871a8bf10f7002a0f5c3ddab->leave($__internal_efc5d7c2c755656cabe6a08f38874dd857296145871a8bf10f7002a0f5c3ddab_prof);
+        $__internal_0cf985a79b4d5e169f15bd678a8cf1489e2e5bbb7fd89789669f645f90e52ffe->leave($__internal_0cf985a79b4d5e169f15bd678a8cf1489e2e5bbb7fd89789669f645f90e52ffe_prof);
 
     }
 

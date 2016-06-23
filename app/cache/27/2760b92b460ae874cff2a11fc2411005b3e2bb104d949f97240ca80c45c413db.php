@@ -15,8 +15,8 @@ class __TwigTemplate_62087f100963334320c84b17f4106b9ade8a37e4541f8319a575e8be5b9
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_8f3ae856e070033bb814a030c8bed153b53e5f983fe83b2b3288b01a3014a161 = $this->env->getExtension("native_profiler");
-        $__internal_8f3ae856e070033bb814a030c8bed153b53e5f983fe83b2b3288b01a3014a161->enter($__internal_8f3ae856e070033bb814a030c8bed153b53e5f983fe83b2b3288b01a3014a161_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@bolt/_nav/_secondary-configuration.twig"));
+        $__internal_b2831a11c998f5a7692acbd9ac0df513c40a105cb1b1e8fecd30e021ec0a34ca = $this->env->getExtension("native_profiler");
+        $__internal_b2831a11c998f5a7692acbd9ac0df513c40a105cb1b1e8fecd30e021ec0a34ca->enter($__internal_b2831a11c998f5a7692acbd9ac0df513c40a105cb1b1e8fecd30e021ec0a34ca_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@bolt/_nav/_secondary-configuration.twig"));
 
         // line 1
         $context["config_menu"] = $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : null), "menu.admin", array(), "array"), "get", array(0 => "config"), "method");
@@ -70,7 +70,7 @@ class __TwigTemplate_62087f100963334320c84b17f4106b9ade8a37e4541f8319a575e8be5b9
         echo "
 ";
         
-        $__internal_8f3ae856e070033bb814a030c8bed153b53e5f983fe83b2b3288b01a3014a161->leave($__internal_8f3ae856e070033bb814a030c8bed153b53e5f983fe83b2b3288b01a3014a161_prof);
+        $__internal_b2831a11c998f5a7692acbd9ac0df513c40a105cb1b1e8fecd30e021ec0a34ca->leave($__internal_b2831a11c998f5a7692acbd9ac0df513c40a105cb1b1e8fecd30e021ec0a34ca_prof);
 
     }
 

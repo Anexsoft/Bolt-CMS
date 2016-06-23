@@ -15,8 +15,8 @@ class __TwigTemplate_169e946fde3ec84dfc9c5bf94ff8befcd0b067d31e33522288be070a77a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_e4fa3515638339de0236664318043be378a8c75afc1b81772dd9ccda3212557e = $this->env->getExtension("native_profiler");
-        $__internal_e4fa3515638339de0236664318043be378a8c75afc1b81772dd9ccda3212557e->enter($__internal_e4fa3515638339de0236664318043be378a8c75afc1b81772dd9ccda3212557e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@bolt/_nav/_secondary-filemanagement.twig"));
+        $__internal_ada910c6b28c225621c998d06ee9b473857c6ae9757090bd204a68ae1ac72718 = $this->env->getExtension("native_profiler");
+        $__internal_ada910c6b28c225621c998d06ee9b473857c6ae9757090bd204a68ae1ac72718->enter($__internal_ada910c6b28c225621c998d06ee9b473857c6ae9757090bd204a68ae1ac72718_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@bolt/_nav/_secondary-filemanagement.twig"));
 
         // line 1
         $context["files_menu"] = $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : null), "menu.admin", array(), "array"), "get", array(0 => "files"), "method");
@@ -38,7 +38,7 @@ class __TwigTemplate_169e946fde3ec84dfc9c5bf94ff8befcd0b067d31e33522288be070a77a
         echo "
 ";
         
-        $__internal_e4fa3515638339de0236664318043be378a8c75afc1b81772dd9ccda3212557e->leave($__internal_e4fa3515638339de0236664318043be378a8c75afc1b81772dd9ccda3212557e_prof);
+        $__internal_ada910c6b28c225621c998d06ee9b473857c6ae9757090bd204a68ae1ac72718->leave($__internal_ada910c6b28c225621c998d06ee9b473857c6ae9757090bd204a68ae1ac72718_prof);
 
     }
 

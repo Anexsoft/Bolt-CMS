@@ -15,8 +15,8 @@ class __TwigTemplate_9e50a415013da1f905891386f4d2c68258dfe4a7f273c688c1d44ab4129
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_86f172eef76c5df75b933b64417ff954c4073c3a678626335f7563e5c0be5d63 = $this->env->getExtension("native_profiler");
-        $__internal_86f172eef76c5df75b933b64417ff954c4073c3a678626335f7563e5c0be5d63->enter($__internal_86f172eef76c5df75b933b64417ff954c4073c3a678626335f7563e5c0be5d63_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@bolt/_nav/_secondary-translations.twig"));
+        $__internal_8c1b6ab0c7b06ea4390a53bc56d80756cb1e65faaf5c6472a43c006c01899e5f = $this->env->getExtension("native_profiler");
+        $__internal_8c1b6ab0c7b06ea4390a53bc56d80756cb1e65faaf5c6472a43c006c01899e5f->enter($__internal_8c1b6ab0c7b06ea4390a53bc56d80756cb1e65faaf5c6472a43c006c01899e5f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@bolt/_nav/_secondary-translations.twig"));
 
         // line 1
         $context["tr_menu"] = $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : null), "menu.admin", array(), "array"), "get", array(0 => "translations"), "method");
@@ -42,7 +42,7 @@ class __TwigTemplate_9e50a415013da1f905891386f4d2c68258dfe4a7f273c688c1d44ab4129
         echo "
 ";
         
-        $__internal_86f172eef76c5df75b933b64417ff954c4073c3a678626335f7563e5c0be5d63->leave($__internal_86f172eef76c5df75b933b64417ff954c4073c3a678626335f7563e5c0be5d63_prof);
+        $__internal_8c1b6ab0c7b06ea4390a53bc56d80756cb1e65faaf5c6472a43c006c01899e5f->leave($__internal_8c1b6ab0c7b06ea4390a53bc56d80756cb1e65faaf5c6472a43c006c01899e5f_prof);
 
     }
 

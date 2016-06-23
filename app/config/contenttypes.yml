@@ -80,6 +80,42 @@ entradas:
     default_status: publish
     sort: -datepublish
     recordsperpage: 10
+    
+    
+# Eventos que realiza nuestro portal
+eventos:
+    name: Eventos
+    singular_name: Evento
+    fields:
+        titulo:
+            type: text
+            class: large
+            group: información
+            required: true
+        descripción:
+            type: textarea
+            required: true
+        donde:
+            type: text
+            class: large
+            required: true
+        cuando:
+            type: datetime
+            required: true
+        costo:
+            type: text
+            class: large
+    icon_many: "fa:calendar"
+    icon_one: "fa:calendar"
+    relations:
+        entradas:
+            multiple: true
+            label: Seleccionada una entrada
+            order: -id
+    listing_records: 10
+    default_status: publish
+    sort: -datepublish
+    recordsperpage: 10
 
 # The 'Blocks' contenttype is a so-called 'resource contenttype'. This means
 # that it can be used to manage smaller pieces of content, like the 'about us'

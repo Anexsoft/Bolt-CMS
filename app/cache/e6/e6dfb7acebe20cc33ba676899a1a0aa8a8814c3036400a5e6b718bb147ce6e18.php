@@ -15,8 +15,8 @@ class __TwigTemplate_cac6bdf64eadb0c98be6f545d601bda1c798a6e1805a4bdd723c935bcbb
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_3a4554fd0320abf5b9279a07e6d46d9492442bf709feb55e90b21381cd872b85 = $this->env->getExtension("native_profiler");
-        $__internal_3a4554fd0320abf5b9279a07e6d46d9492442bf709feb55e90b21381cd872b85->enter($__internal_3a4554fd0320abf5b9279a07e6d46d9492442bf709feb55e90b21381cd872b85_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@bolt/_nav/_secondary-extensions.twig"));
+        $__internal_05fbe47f7291e1e1f8bc5add510506444ebc940c855bfb86ade75030ee5e9395 = $this->env->getExtension("native_profiler");
+        $__internal_05fbe47f7291e1e1f8bc5add510506444ebc940c855bfb86ade75030ee5e9395->enter($__internal_05fbe47f7291e1e1f8bc5add510506444ebc940c855bfb86ade75030ee5e9395_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@bolt/_nav/_secondary-extensions.twig"));
 
         // line 2
         $context["sub"] = array();
@@ -80,7 +80,7 @@ $context["extend_submenu"], "permission", array()))));
         echo "
 ";
         
-        $__internal_3a4554fd0320abf5b9279a07e6d46d9492442bf709feb55e90b21381cd872b85->leave($__internal_3a4554fd0320abf5b9279a07e6d46d9492442bf709feb55e90b21381cd872b85_prof);
+        $__internal_05fbe47f7291e1e1f8bc5add510506444ebc940c855bfb86ade75030ee5e9395->leave($__internal_05fbe47f7291e1e1f8bc5add510506444ebc940c855bfb86ade75030ee5e9395_prof);
 
     }
 

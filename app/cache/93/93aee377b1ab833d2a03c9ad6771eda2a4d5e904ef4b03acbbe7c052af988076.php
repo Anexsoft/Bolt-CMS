@@ -15,8 +15,8 @@ class __TwigTemplate_f9da8a2a484d76cc6d1a179261f229fae74768b8c816fbdfc2a1a34ba44
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_dd4be68e244e07505cdb81356b8501a0fdfbaa07e50615f3d8a24328ca77a8f2 = $this->env->getExtension("native_profiler");
-        $__internal_dd4be68e244e07505cdb81356b8501a0fdfbaa07e50615f3d8a24328ca77a8f2->enter($__internal_dd4be68e244e07505cdb81356b8501a0fdfbaa07e50615f3d8a24328ca77a8f2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@bolt/_nav/_primary.twig"));
+        $__internal_d6b98534f7232fec420e084ec5cf8219d88c2b8ff149e6c98649e20705380a60 = $this->env->getExtension("native_profiler");
+        $__internal_d6b98534f7232fec420e084ec5cf8219d88c2b8ff149e6c98649e20705380a60->enter($__internal_d6b98534f7232fec420e084ec5cf8219d88c2b8ff149e6c98649e20705380a60_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@bolt/_nav/_primary.twig"));
 
         // line 1
         echo "<div class=\"navbar-header\">
@@ -117,7 +117,7 @@ class __TwigTemplate_f9da8a2a484d76cc6d1a179261f229fae74768b8c816fbdfc2a1a34ba44
 </ul>
 ";
         
-        $__internal_dd4be68e244e07505cdb81356b8501a0fdfbaa07e50615f3d8a24328ca77a8f2->leave($__internal_dd4be68e244e07505cdb81356b8501a0fdfbaa07e50615f3d8a24328ca77a8f2_prof);
+        $__internal_d6b98534f7232fec420e084ec5cf8219d88c2b8ff149e6c98649e20705380a60->leave($__internal_d6b98534f7232fec420e084ec5cf8219d88c2b8ff149e6c98649e20705380a60_prof);
 
     }
 
