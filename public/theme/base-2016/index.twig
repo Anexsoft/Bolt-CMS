@@ -7,62 +7,48 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-xs-12">
+        <div class="col-xs-8">
+
+            {% for category in config.get('taxonomy/categories/options') %}
+            {% setcontent records = 'entradas' where { categories: category } limit 5 %}
+                <h3 class="page-header">{{category}}</h3>
+                {% for record in records %}
+                    <div class="post-preview">
+                        <a href="{{ record.contenttype.singular_slug }}/{{ record.slug }}">
+                            <h2 class="post-title">
+                                {{ record.titulo }}
+                            </h2>
+    <!--
+                            <h3 class="post-subtitle">
+                                Problems look mighty small from 150 miles up
+                            </h3>
+    -->
+                        </a>
+                        <p class="post-meta">Publicado por {{ record.user.username }} el <i class="fa fa-calendar"></i> {{ record.datepublish }}</p>
+                    </div>
+                    <hr>
+                {% else %}
+                    No se han econtrado publicaciones
+                {% endfor %}
+            {% endfor %}
+
+        </div>
+        
+        <div class="col-xs-4">
+            <h2 class="page-header">Eventos por venir</h2>
+            {% setcontent eventos = 'eventos' where { cuando: '>now' } limit 10 %}
             
-            <h2 class="text-center page-header">
-                My last news
-            </h2>
-            
-            <div class="post-preview">
-                <a href="post.html">
-                    <h2 class="post-title">
-                        Man must explore, and this is exploration at its greatest
-                    </h2>
-                    <h3 class="post-subtitle">
-                        Problems look mighty small from 150 miles up
-                    </h3>
-                </a>
-                <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2014</p>
-            </div>
-            <hr>
-            <div class="post-preview">
-                <a href="post.html">
-                    <h2 class="post-title">
-                        I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
-                    </h2>
-                </a>
-                <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 18, 2014</p>
-            </div>
-            <hr>
-            <div class="post-preview">
-                <a href="post.html">
-                    <h2 class="post-title">
-                        Science has not yet mastered prophecy
-                    </h2>
-                    <h3 class="post-subtitle">
-                        We predict too much for the next year and yet far too little for the next ten.
-                    </h3>
-                </a>
-                <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on August 24, 2014</p>
-            </div>
-            <hr>
-            <div class="post-preview">
-                <a href="post.html">
-                    <h2 class="post-title">
-                        Failure is not an option
-                    </h2>
-                    <h3 class="post-subtitle">
-                        Many say exploration is part of our destiny, but it’s actually our duty to future generations.
-                    </h3>
-                </a>
-                <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on July 8, 2014</p>
-            </div>
-            <hr>
-            <!-- Pager -->
-            <ul class="pager">
-                <li class="next">
-                    <a href="#">Older Posts &rarr;</a>
+            <ul class="list-unstyled">
+            {% for evento in eventos %}
+                <li>
+                    <b>{{ evento.titulo }}</b><br />
+                    <small>
+                        <i class="fa fa-calendar"></i> {{ evento.cuando }}
+                    </small>
                 </li>
+            {% else %}
+                <li>No se han econtrado publicaciones</li>
+            {% endfor %}
             </ul>
         </div>
     </div>

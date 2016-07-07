@@ -6,9 +6,14 @@
     {{ record.title|default('404 not found') }}
 {% endblock title %}
 
+{% block header %}
+    {% include 'partials/_header.twig' %}
+{% endblock %}
+
 {% block main %}
+<div class="container">
     <div class="row">
-        <div class="large-12 columns">
+        <div class="col-xs-12">
 
         {# special case: See if we actually want the Styleguide. #}
         {% if app.request.server.get('REQUEST_URI') == '/styleguide' %}
@@ -26,9 +31,6 @@
                 <div class="primary callout" data-closable>
                     <h5>Add a Blocks record with slug '404-not-found' to customize this message. </h5>
                     <p>If it's not showing up here, doublecheck that the <tt>slug</tt> is correct, and that the Block is published.</p>
-                    <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
-                        <span aria-hidden="true">&times;</span>
-                    </button>
                 </div>
             {% endif %}
 
@@ -36,5 +38,5 @@
 
         </div>
     </div>
-
+</div>
 {% endblock main %}
