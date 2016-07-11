@@ -8,10 +8,9 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-12">
-            
             {% for record in records %}
                 <div class="post-preview">
-                    <a href="{{ record.contenttype.singular_slug }}/{{ record.slug }}">
+                    <a href="{{ record.link }}">
                         <h2 class="post-title">
                             {{ record.titulo }}
                         </h2>
