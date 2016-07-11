@@ -2,25 +2,13 @@
 # details: https://docs.bolt.cm/content/menus
 
 main:
-    - label: Home
-      title: This is the first menu item.
+    - label: Inicio
+      title: Página de inicio
       path: homepage
-      class: first
-    - label: Second item
-      path: entry/1
-      submenu:
-          - label: Sub 1
-            path: entry/2
-          - label: Sub 2
-            class: menu-item-class
-            path: entry/3
-          - label: Sub 3
-            path: entry/4
-          - label: Sub 4
-            class: sub-class
-            path: page/3
-    - label: All pages
-      path: pages/
-    - label: The Bolt site
-      link: http://bolt.cm
-      class: last
+    - label: Noticias
+      path: entradas
+    - label: Contacto
+      title: Página de contacto
+      path: pagina/contacto
+    - label: Anexsoft Blog
+      link: http://anexsoft.com

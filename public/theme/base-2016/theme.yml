@@ -25,7 +25,7 @@ headerimage:
 # maintenance_template: maintenance_default.twig
 homepage_template: index.twig
 record_template: record.twig
-listing_template: listing.twig
+listing_template: entradas/listing.twig
 search_results_template: search.twig
 notfound: notfound.twig
 
